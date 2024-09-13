@@ -11,14 +11,14 @@ public class ProdutoRepository : IProdutoRepository
         _collection = mongoDatabase.GetCollection<Produto>("produtos"); 
     }
 
-    public Task CreateAsync(Produto produto)
+    public async Task CreateAsync(Produto produto)
     {
-        throw new NotImplementedException();
+       await _collection.InsertOneAsync(produto);
     }
 
-    public Task DeleteAsync(string id)
+    public async Task DeleteAsync(string id)
     {
-        throw new NotImplementedException();
+        await _collection.DeleteOneAsync(p => p.Id == id);
     }
 
     public async Task<List<Produto>> GetAllAsync() => 
@@ -27,8 +27,8 @@ public class ProdutoRepository : IProdutoRepository
     public async Task<Produto> GetByIdAsync(string id) => 
         await _collection.Find(_ => _.Id == id).FirstOrDefaultAsync();
 
-    public Task UpdateAsync(Produto produto)
+    public async Task UpdateAsync(Produto produto)
     {
-        throw new NotImplementedException();
+        await _collection.ReplaceOneAsync(_ => _.Id == produto.Id, produto);
     }
 }
