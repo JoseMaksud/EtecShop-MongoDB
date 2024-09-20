@@ -6,106 +6,92 @@ use EtecShop
 
 // Criar a coleção de Produtos
 db.produtos.insertMany([
-{
-    nome: "Playstation 5",
-    descricao: "Play Has No Limits Jogar Não Tem Limites PlayStation5 O console PS5 oferece novas possibilidades de jogabilidade que você nunca imaginou. Reproduza jogos para PS5 e PS4 em Blu-ray Disc. Além disso, você também pode baixar jogos digitais para PS5 e PS4 pela PlayStation Store. Experimente o carregamento extremamente rápido do SSD de ultra-velocidade, uma imersão mais profunda com suporte à resposta tátil, gatilhos adaptáveis e áudio 3D. Além de uma geração totalmente nova de jogos incríveis PlayStation.
-    Na velocidade da luz Aproveite o carregamento extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio em 3D*, além de uma geração inédita de jogos incríveis para PlayStation. *Áudio 3D via alto-falantes integrados da TV ou fones de ouvido estéreo analógicos/USB. Configuração necessária.
-    Jogos deslumbrantes Maravilhe-se com os gráficos incríveis e experimente os recursos do novo PS5. Imersão de tirar o fôlego Descubra uma experiência de jogos ainda mais profunda com a ajuda da resposta tátil, dos gatilhos adaptáveis e da tecnologia de áudio 3D.
-    Explore ambientes realistas com o Ray tracing. O Ray tracing traz novos níveis de realismo com sombras naturais e reflexos no suporte a jogos do PS5. Veja cores vibrantes. Com uma TV HDR, os jogos compatíveis do PS5 exibem uma incrível variedade de cores.
-    Movimente-se pelos mundos dos jogos com um realismo incrível. Jogabilidade com taxa de quadros uniforme e fluída de até 120 fps em jogos compatíveis, com suporte para saída de 120 Hz em telas 4K. Experimente gráficos 4K nítidos. Com jogos compatíveis do PS5, cada pequeno detalhe ganha vida em uma TV 4K. Jogue mais de 4 mil jogos do PS4 em seu console PS5. Viva a nostalgia de jogar seus títulos favoritos do PS4 e do PS VR com a Retrocompatibilidade.",
-    preco: 3899.99,
-    precoDesconto: 3699.99,
-    categorias: ["Console", "PlayStation", "Games"],
-    tags: ["4K", "SSD", "Ray Tracing"],
-    marca: "Playstation",
-    estoque: 5,
-    ativo: true
-},
-{
-    nome: "Xbox Series X,
-    descricao: "Console Xbox mais rápido e poderoso de todos os tempos
-    Jogue milhares de títulos: todos os jogos têm melhor aparência e são melhor executados no Xbox Series X
-    No coração do Series X está a Xbox Velocity Architecture, que combina um SSD personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo
-    Troque simultaneamente entre vários jogos em um instante com o Quick Resume
-    Explore novos mundos e desfrute da ação como nunca antes com 12 teraflops incomparáveis de poder de processamento gráfico
-    Desfrute de jogos 4K a até 120 quadros por segundo, som 3D avançado especial e muito mais
-    4K a 120 FPS: requer conteúdo e exibição compatíveis
-    Versão X - com leitor de disco",
-    preco: 4123.00,
-    precoDesconto: 4000.00,
-    categorias: ["Console", "Xbox", "Games"],
-    tags: ["4K", "SSD", "12 Teraflops"],
-    marca: "Microsoft",
-    estoque: 4,
-    ativo: true
-},
-{
-    nome: "Steam Deck 512Gb",
-    descricao: "Com seu console Steam Deck você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas. Adaptado às suas necessidades Salve as suas aplicações, fotos, vídeos e muito mais no disco rígido, que tem uma capacidade de 512 GB. Por ter um processador de 4 núcleos e um gráfico, fornecem uma experiência dinâmica, respostas ágeis e transições suaves de imagens de alta definição. Você poderá reproduzir música, assistir seus filmes e séries favoritos através dos aplicativos para download.",
-    preco: 3986.00,
-    precoDesconto: 3700.00,
-    categorias: ["Console", "Steam", "Games"],
-    tags: ["512GB", "Portable", "Valve"],
-    marca: "Valve",
-    estoque: 8,
-    ativo: true
-},
-{
-    nome: "Nintendo Switch",
-    descricao: "JOGUE COMO PREFERIR. O Nintendo Switch foi desenvolvido para fazer parte da sua vida, transformando-se de um console doméstico em um console portátil num piscar de olhos
-    MODO TV. Coloque o seu Nintendo Switch na base do console para se divertir jogando em sua televisão.
-    MODO PORTÁTIL. Remova o console da base e jogue com os controles joy-con encaixados para aproveitar a diversão do seu Nintendo, de onde estiver.",
-    preco: 2199.99,
-    precoDesconto: 1999.99,
-    categorias: ["Console", "Nintendo", "Games"],
-    tags: ["Portable", "Joy-Con", "Hybrid"],
-    marca: "Nintendo",
-    estoque: 15,
-    ativo: true
-},
-{
-    nome: "Diablo IV",
-    descricao: "Com este jogo Diablo, você desfrutará de horas de diversão e novos desafios que lhe permitirão melhorar como jogador.Interaja com outros jogadores. Você poderá desfrutar de uma experiência incomparável, pois permite que você jogue com seus amigos e compartilhar momentos inesquecíveis. Diversão sem fronteiras. Você será capaz de compartilhar cada jogo com pessoas de todo o mundo, pois é possível conectar-se de maneira online.",
-    preco: 386.45,
-    precoDesconto: 297.56,
-    categorias: ["Jogo", "PlayStation", "Xbox", "RPG"],
-    tags: ["Action RPG", "Multiplayer", "Online"],
-    marca: "Blizzard",
-    estoque: 50,
-    ativo: true
-},
-{
-    nome: "The Witcher 3: Wild Hunt",
-    descricao: "Você é Geralt, da cidade de Rívia. Ao seu redor, todas as cidades e os povoados dos Reinos do Norte estão sendo devastados pela força sobrenatural de um exército invasor, conhecido apenas como Caçada Selvagem, que deixa um rastro sangrento de pura destruição por onde passa.",
-    preco: 167,
-    precoDesconto: 155.31,
-    categorias: ["Jogo", "PlayStation", "Xbox", "Nintendo", "Ação"],
-    tags: ["Open World", "Fantasy", "Adventure"],
-    marca: "CD Projekt Red",
-    estoque: 15,
-    ativo: true
-},
-{
-    nome: "Marvel's Spider-man: Miles Morales Edição Ultimate Ps5",
-    descricao: "JOGO MARVEL'S SPIDER-MAN: MILES MORALES EDIÇÃO ULTIMATE - PS5
-    Em sua mais nova aventura no universo de Marvel's Spider-man, o adolescente Miles Morales está se ajustando a sua nova casa, enquanto segue os passos de seu mentor, Peter Parker, como o novo Homem-aranha.",
-    preco: 510.50,
-    precoDesconto: 474.77,
-    categorias: ["Jogo", "PlayStation", "Ação"],
-    tags: ["Superhero", "PS5", "Action"],
-    marca: "Insomniac Games",
-    estoque: 3,
-    ativo: true
-},
-{
-    nome: "Skyrim Anniversary Edition",
-    descricao: "Skyrim reimagina e revoluciona o épico de fantasia de mundo aberto, dando vida a um mundo virtual completo aberto para você explorar da maneira que escolher.",
-    preco: 140.99,
-    precoDesconto: 120.99,
-    categorias: ["Jogo", "PlayStation","Xbox", "Nintendo", "Ação"],
-    tags: ["Open World", "Fantasy", "Anniversary"],
-    marca: "Bethesda Games",
-    estoque: 10,
-    ativo: true
-}
-])
+    {
+        nome: "Playstation 5",
+        descricao: "Play Has No Limits Jogar Não Tem Limites PlayStation5 O console PS5 oferece novas possibilidades de jogabilidade que você nunca imaginou. Reproduza jogos para PS5 e PS4 em Blu-ray Disc. Além disso, você também pode baixar jogos digitais para PS5 e PS4 pela PlayStation Store. Experimente o carregamento extremamente rápido do SSD de ultra-velocidade, uma imersão mais profunda com suporte à resposta tátil, gatilhos adaptáveis e áudio 3D. Além de uma geração totalmente nova de jogos incríveis PlayStation. Na velocidade da luz Aproveite o carregamento extremamente rápido com o SSD de altíssima velocidade, uma imersão mais profunda com suporte a feedback tátil, gatilhos adaptáveis e áudio em 3D*, além de uma geração inédita de jogos incríveis para PlayStation. *Áudio 3D via alto-falantes integrados da TV ou fones de ouvido estéreo analógicos/USB. Configuração necessária. Jogos deslumbrantes Maravilhe-se com os gráficos incríveis e experimente os recursos do novo PS5. Imersão de tirar o fôlego Descubra uma experiência de jogos ainda mais profunda com a ajuda da resposta tátil, dos gatilhos adaptáveis e da tecnologia de áudio 3D. Explore ambientes realistas com o Ray tracing. O Ray tracing traz novos níveis de realismo com sombras naturais e reflexos no suporte a jogos do PS5. Veja cores vibrantes. Com uma TV HDR, os jogos compatíveis do PS5 exibem uma incrível variedade de cores. Movimente-se pelos mundos dos jogos com um realismo incrível. Jogabilidade com taxa de quadros uniforme e fluída de até 120 fps em jogos compatíveis, com suporte para saída de 120 Hz em telas 4K. Experimente gráficos 4K nítidos. Com jogos compatíveis do PS5, cada pequeno detalhe ganha vida em uma TV 4K. Jogue mais de 4 mil jogos do PS4 em seu console PS5. Viva a nostalgia de jogar seus títulos favoritos do PS4 e do PS VR com a Retrocompatibilidade.",
+        preco: 3899.99,
+        precoDesconto: 3699.99,
+        categorias: ["Console", "PlayStation", "Games"],
+        tags: ["4K", "SSD", "Ray Tracing"],
+        marca: "Playstation",
+        estoque: 5,
+        ativo: true
+    },
+    {
+        nome: "Xbox Series X",
+        descricao: "Console Xbox mais rápido e poderoso de todos os tempos Jogue milhares de títulos: todos os jogos têm melhor aparência e são melhor executados no Xbox Series X No coração do Series X está a Xbox Velocity Architecture, que combina um SSD personalizado e software integrado para diminuir significativamente os tempos de carregamento dentro e fora do jogo Troque simultaneamente entre vários jogos em um instante com o Quick Resume Explore novos mundos e desfrute da ação como nunca antes com 12 teraflops incomparáveis de poder de processamento gráfico Desfrute de jogos 4K a até 120 quadros por segundo, som 3D avançado especial e muito mais 4K a 120 FPS: requer conteúdo e exibição compatíveis Versão X - com leitor de disco",
+        preco: 4123.00,
+        precoDesconto: 4000.00,
+        categorias: ["Console", "Xbox", "Games"],
+        tags: ["4K", "SSD", "12 Teraflops"],
+        marca: "Microsoft",
+        estoque: 4,
+        ativo: true
+    },
+    {
+        nome: "Steam Deck 512Gb",
+        descricao: "Com seu console Steam Deck você terá entretenimento garantido todos os dias. Sua tecnologia foi criada para colocar novos desafios para jogadores novatos e especialistas. Adaptado às suas necessidades Salve as suas aplicações, fotos, vídeos e muito mais no disco rígido, que tem uma capacidade de 512 GB. Por ter um processador de 4 núcleos e um gráfico, fornecem uma experiência dinâmica, respostas ágeis e transições suaves de imagens de alta definição. Você poderá reproduzir música, assistir seus filmes e séries favoritos através dos aplicativos para download.",
+        preco: 3986.00,
+        precoDesconto: 3700.00,
+        categorias: ["Console", "Steam", "Games"],
+        tags: ["512GB", "Portable", "Valve"],
+        marca: "Valve",
+        estoque: 8,
+        ativo: true
+    },
+    {
+        nome: "Nintendo Switch",
+        descricao: "JOGUE COMO PREFERIR. O Nintendo Switch foi desenvolvido para fazer parte da sua vida, transformando-se de um console doméstico em um console portátil num piscar de olhos MODO TV. Coloque o seu Nintendo Switch na base do console para se divertir jogando em sua televisão. MODO PORTÁTIL. Remova o console da base e jogue com os controles joy-con encaixados para aproveitar a diversão do seu Nintendo, de onde estiver.",
+        preco: 2199.99,
+        precoDesconto: 1999.99,
+        categorias: ["Console", "Nintendo", "Games"],
+        tags: ["Portable", "Joy-Con", "Hybrid"],
+        marca: "Nintendo",
+        estoque: 15,
+        ativo: true
+    },
+    {
+        nome: "Diablo IV",
+        descricao: "Com este jogo Diablo, você desfrutará de horas de diversão e novos desafios que lhe permitirão melhorar como jogador.Interaja com outros jogadores. Você poderá desfrutar de uma experiência incomparável, pois permite que você jogue com seus amigos e compartilhar momentos inesquecíveis. Diversão sem fronteiras. Você será capaz de compartilhar cada jogo com pessoas de todo o mundo, pois é possível conectar-se de maneira online.",
+        preco: 386.45,
+        precoDesconto: 297.56,
+        categorias: ["Jogo", "PlayStation", "Xbox", "RPG"],
+        tags: ["Action RPG", "Multiplayer", "Online"],
+        marca: "Blizzard",
+        estoque: 50,
+        ativo: true
+    },
+    {
+        nome: "The Witcher 3: Wild Hunt",
+        descricao: "Você é Geralt, da cidade de Rívia. Ao seu redor, todas as cidades e os povoados dos Reinos do Norte estão sendo devastados pela força sobrenatural de um exército invasor, conhecido apenas como Caçada Selvagem, que deixa um rastro sangrento de pura destruição por onde passa.",
+        preco: 167,
+        precoDesconto: 155.31,
+        categorias: ["Jogo", "PlayStation", "Xbox", "Nintendo", "Ação"],
+        tags: ["Open World", "Fantasy", "Adventure"],
+        marca: "CD Projekt Red",
+        estoque: 15,
+        ativo: true
+    },
+    {
+        nome: "Marvel's Spider-man: Miles Morales Edição Ultimate Ps5",
+        descricao: "JOGO MARVEL'S SPIDER-MAN: MILES MORALES EDIÇÃO ULTIMATE - PS5 Em sua mais nova aventura no universo de Marvel's Spider-man, o adolescente Miles Morales está se ajustando a sua nova casa, enquanto segue os passos de seu mentor, Peter Parker, como o novo Homem-aranha.",
+        preco: 510.50,
+        precoDesconto: 474.77,
+        categorias: ["Jogo", "PlayStation", "Ação"],
+        tags: ["Superhero", "PS5", "Action"],
+        marca: "Insomniac Games",
+        estoque: 3,
+        ativo: true
+    },
+    {
+        nome: "Skyrim Anniversary Edition",
+        descricao: "Skyrim reimagina e revoluciona o épico de fantasia de mundo aberto, dando vida a um mundo virtual completo aberto para você explorar da maneira que escolher.",
+        preco: 140.99,
+        precoDesconto: 120.99,
+        categorias: ["Jogo", "PlayStation", "Xbox", "Nintendo", "Ação"],
+        tags: ["Open World", "Fantasy", "Anniversary"],
+        marca: "Bethesda Games",
+        estoque: 10,
+        ativo: true
+    }
+]);
